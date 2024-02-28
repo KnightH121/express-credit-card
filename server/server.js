@@ -10,7 +10,7 @@ const app = express();
 
 // write a cors options?
 const corsOptions = {
-  origin: "http://localhost:5173",
+  origin: "https://expresscreditcard-client.onrender.com",
   methods: "POST",
   allowedHeaders: "Content-Type, Authorization",
   preflightContinue: false,

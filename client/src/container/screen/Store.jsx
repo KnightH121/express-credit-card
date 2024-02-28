@@ -15,9 +15,9 @@ const Store = () => {
             <div className="card-info" key={id}>
               <span>
                 <img
-                  srcSet={`${cardType} 1x, ${cardType}@2x 2x, ${cardType}@3x 3x`}
+                  srcSet={`${cardType || card.cardType} 1x, ${cardType || card.cardType}@2x 2x, ${cardType || card.cardType}@3x 3x`}
                   src={
-                    cardType
+                    cardType || card.cardType
                   } /* Fallback source for browsers that don't support srcSet */
                   alt={cardType}
                   loading="lazy"
